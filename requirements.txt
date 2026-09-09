@@ -1,0 +1,11 @@
+# Project Framework & Core API
+fastapi==0.110.0
+uvicorn==0.28.0
+
+# LLM & Asset Processing Toolkits
+langchain==0.1.12
+pydantic==2.6.4
+
+# Database Drivers & Infrastructure
+psycopg2-binary==2.9.9
+redis==5.0.3
