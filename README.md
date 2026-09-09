@@ -1,14 +1,14 @@
-# Smart-Invoice-Processor
+# Cloud-Inventory-API
 
 ## Overview
-The Smart-Invoice-Processor is a microservice designed to ingest PDF invoices, extract key-value pairs (such as vendor, totals, and line items) using local vision LLMs, and push structured JSON payloads into a downstream accounting database. It provides an API interface for bulk processing and uses a task queue to throttle concurrent document analysis.
+The Cloud-Inventory-API is a robust backend service designed to track warehouse stock levels, handle rapid SKU inventory mutations, and emit transactional events to global distribution queues. It leverages a fast asynchronous event loop to process webhooks from regional logistics partners and aggregates real-time warehouse data.
 
 ## Execution Entry Points
-To run or analyze the system architecture, refer to these primary file paths:
-- System runtime initialized via: `app.py`
-- Background worker loops managed by: `src/worker.py`
+The application processes all operations and boots up through the following entry files:
+- Primary web API and server initialization: `index.ts`
+- Core database connections and schema migrations: `src/database.ts`
 
 ## Metadata & Compliance
-- **Service Owner**: Financial Automation Group
-- **Maintainers**: John Doe (john.doe@example.com), Jane Smith (jane.smith@example.com)
-- **Deployment Tier**: Production-Tier1
+- **Service Owner**: Logistics Infrastructure Team
+- **Maintainers**: Sarah Connor (sarah.c@example.com), Alex Mercer (alex.m@example.com)
+- **Deployment Tier**: Core-Production-Tier0
